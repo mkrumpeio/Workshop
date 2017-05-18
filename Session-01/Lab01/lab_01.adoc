@@ -67,7 +67,7 @@ Follow the prompts.
 . Publish the application.
 +
 ----
-> Windows: dotnet publish -o %CD%\publish -r ubuntu.14.04-x64
+> Windows: dotnet publish -o .\publish -r ubuntu.14.04-x64
 
 > Mac/Linux: dotnet publish -o $PWD/publish -r ubuntu.14.04-x64
 ----
@@ -75,7 +75,7 @@ Follow the prompts.
 . Push the application!
 +
 ----
-> Windows: cf push -f manifest.yml -p %CD%/publish 
+> Windows: cf push -f manifest.yml -p .publish 
 
 > Mac/Linux: cf push -f manifest.yml -p $PWD/publish 
 ----
